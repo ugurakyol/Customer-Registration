@@ -105,7 +105,7 @@
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signup-password" name = "confirmPassword">Confirm Password</label>
-						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Confirm Password">
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">There is error!</span>
 					</p>
