@@ -13,3 +13,5 @@
 
 Route::get('/', 'IndexController@index')->name('home');
 Route::post('/register', 'RegisterController@register')->name('postRegistration');
+Route::post('/login', 'LoginController@login')->name('login');
+Route::get('/homepage', 'IndexController@index')->name('home');
