@@ -11,10 +11,4 @@
 |
 */
 
-<<<<<<< HEAD
-Route::get('/', function () {
-    return view('welcome ');
-});
-=======
-Route::get('/', 'IndexController@index')->name('home');
->>>>>>> 106f58c1398ad0b138b86c1574ae62686b737245
+Route::get('/home', 'IndexController@index')->name('home');
