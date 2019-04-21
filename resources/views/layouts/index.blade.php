@@ -6,26 +6,26 @@
 		<nav class="main-nav">
 			<ul>
 				<!-- ссылки на вызов форм -->
-				<li><a class="cd-signin" href="#0">Вход</a></li>
-				<li><a class="cd-signup" href="#0">Регистрация</a></li>
+				<li><a class="cd-signin" href="#0">Login</a></li>
+				<li><a class="cd-signup" href="#0">Sign up</a></li>
 			</ul>
 		</nav>
 	</header>
 	
-	<div class="cd-intro">
-		<h1>Модальные Формы Вход / Регистрация</h1>
+	<!-- <div class="cd-intro">
+		<h1>Modal Forms Login / Sign up</h1>
 		<div class="cd-nugget-info">
 			<a href="http://dbmast.ru/adaptivnye-modalnye-formy-vhoda-i-registracii">
-				&larr; Статья &amp; Скачать
+				&larr;  &amp; Download
 			</a>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="cd-user-modal"> <!-- все формы на фоне затемнения-->
 		<div class="cd-user-modal-container"> <!-- основной контейнер -->
 			<ul class="cd-switcher">
-				<li><a href="#0">Вход</a></li>
-				<li><a href="#0">Регистрация</a></li>
+				<li><a href="#0">Login</a></li>
+				<li><a href="#0">Sign up</a></li>
 			</ul>
 
 			<div id="cd-login"> <!-- форма входа -->
@@ -33,81 +33,60 @@
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signin-email">E-mail</label>
 						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
-						<span class="cd-error-message">Здесь сообщение об ошибке!</span>
+						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-password" for="signin-password">Пароль</label>
-						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Пароль">
-						<a href="#0" class="hide-password">Скрыть</a>
-						<span class="cd-error-message">Здесь сообщение об ошибке!</span>
+						<label class="image-replace cd-password" for="signin-password">Password</label>
+						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+						<a href="#0" class="hide-password">Hide</a>
+						<span class="cd-error-message">There is error!</span>
 					</p>
 
-					<p class="fieldset">
-						<input type="checkbox" id="remember-me" checked>
-						<label for="remember-me">Запомнить меня</label>
-					</p>
 
 					<p class="fieldset">
-						<input class="full-width" type="submit" value="Войти">
+						<input class="full-width" type="submit" value="Log in">
 					</p>
 				</form>
 				
-				<p class="cd-form-bottom-message"><a href="#0">Забыли свой пароль?</a></p>
 				<!-- <a href="#0" class="cd-close-form">Close</a> -->
 			</div> <!-- cd-login -->
 
 			<div id="cd-signup"> <!-- форма регистрации -->
 				<form class="cd-form">
 					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-username">Имя пользователя</label>
-						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Имя пользователя">
-						<span class="cd-error-message">Здесь сообщение об ошибке!</span>
+						<label class="image-replace cd-username" for="signup-username">User Name</label>
+						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Write user name">
+						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signup-email">E-mail</label>
 						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
-						<span class="cd-error-message">Здесь сообщение об ошибке!</span>
+						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-password" for="signup-password">Пароль</label>
-						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Пароль">
-						<a href="#0" class="hide-password">Скрыть</a>
-						<span class="cd-error-message">Здесь сообщение об ошибке!</span>
+						<label class="image-replace cd-password" for="signup-password">Password</label>
+						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+						<a href="#0" class="hide-password">Hide</a>
+						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
 						<input type="checkbox" id="accept-terms">
-						<label for="accept-terms">Я согласен с <a href="#0">Условиями</a></label>
+						<label for="accept-terms">I agree with <a href="#0">Agreement</a></label>
 					</p>
 
 					<p class="fieldset">
-						<input class="full-width has-padding" type="submit" value="Создать аккаунт">
+						<input class="full-width has-padding" type="submit" value="Create Account">
 					</p>
 				</form>
 
 				<!-- <a href="#0" class="cd-close-form">Close</a> -->
 			</div> <!-- cd-signup -->
 
-			<div id="cd-reset-password"> <!-- форма восстановления пароля -->
-				<p class="cd-form-message">Забыли пароль? Пожалуйста, введите адрес своей электронной почты. Вы получите ссылку, чтобы создать новый пароль.</p>
-
-				<form class="cd-form">
-					<p class="fieldset">
-						<label class="image-replace cd-email" for="reset-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
-						<span class="cd-error-message">Здесь сообщение об ошибке!</span>
-					</p>
-
-					<p class="fieldset">
-						<input class="full-width has-padding" type="submit" value="Восстановить пароль">
-					</p>
-				</form>
-
-				<p class="cd-form-bottom-message"><a href="#0">Вернуться к входу</a></p>
-			</div> <!-- cd-reset-password -->
-			<a href="#0" class="cd-close-form">Закрыть</a>
+			
+			<a href="#0" class="cd-close-form">Close</a>
 		</div> <!-- cd-user-modal-container -->
 	</div> <!-- cd-user-modal -->
