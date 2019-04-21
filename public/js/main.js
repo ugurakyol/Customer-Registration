@@ -52,7 +52,7 @@ jQuery(document).ready(function($){
 			$password_field = $this.prev('input');
 		
 		( 'password' == $password_field.attr('type') ) ? $password_field.attr('type', 'text') : $password_field.attr('type', 'password');
-		( 'Скрыть' == $this.text() ) ? $this.text('Показать') : $this.text('Скрыть');
+		( 'Hide' == $this.text() ) ? $this.text('Show') : $this.text('Hide');
 		//фокус и перемещение курсора в конец поля ввода
 		$password_field.putCursorAtEnd();
 	});

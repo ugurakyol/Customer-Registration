@@ -10,6 +10,6 @@
 	<link rel="stylesheet" href="{{asset('css/style.css')}}"> <!-- Gem style -->
 	<script src="{{asset('js/modernizr.js')}}"></script> <!-- Modernizr -->
   	
-	<title>Адаптивные модальные формы входа и регистрации</title>
+	<title>Adaptive registration</title>
 </head>
 
