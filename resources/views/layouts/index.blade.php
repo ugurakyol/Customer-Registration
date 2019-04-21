@@ -53,7 +53,7 @@
 			</div> <!-- cd-login -->
 
 			<div id="cd-signup"> <!-- форма регистрации -->
-				<form class="cd-form">
+				<form class="cd-form" action = "{{route('postRegistration')}}" method="POST">
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signup-username">User Name</label>
 						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Write user name">
@@ -103,7 +103,7 @@
 					</p>
 
 					<p class="fieldset">
-						<input class="full-width has-padding" type="submit" value="Create Account">
+						<button class="full-width has-padding" type="submit" value="Create Account">Create Account</button>
 					</p>
 				{{csrf_field()}}
 				
