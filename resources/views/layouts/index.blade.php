@@ -61,6 +61,30 @@
 					</p>
 
 					<p class="fieldset">
+						<label class="image-replace cd-username" for="signup-usersurname">User Surname</label>
+						<input class="full-width has-padding has-border" id="signup-usersurname" type="text" placeholder="Write user surname">
+						<span class="cd-error-message">There is error!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-username" for="signup-yearofbirth">User Year of Birth</label>
+						<input class="full-width has-padding has-border" id="signup-yearofbirth" type="date" min="1910-01-01" placeholder="Write user year of birth">
+						<span class="cd-error-message">There is error!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-username" for="signup-address">User Address</label>
+						<input class="full-width has-padding has-border" id="signup-address" type="text" placeholder="Write user address">
+						<span class="cd-error-message">There is error!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-username" for="signup-phonenumber">User Phone Number</label>
+						<input class="full-width has-padding has-border" id="signup-phonenumber" type="text" placeholder="Write user phone number">
+						<span class="cd-error-message">There is error!</span>
+					</p>
+
+					<p class="fieldset">
 						<label class="image-replace cd-email" for="signup-email">E-mail</label>
 						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
 						<span class="cd-error-message">There is error!</span>
