@@ -11,4 +11,5 @@
 |
 */
 
-Route::get('/home', 'IndexController@index')->name('home');
+Route::get('/', 'IndexController@index')->name('home');
+Route::post('/register', 'IndexController@index')->name('postRegistration');
