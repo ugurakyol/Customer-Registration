@@ -55,56 +55,56 @@
 			<div id="cd-signup"> <!-- форма регистрации -->
 				<form class="cd-form" action = "{{route('postRegistration')}}" method="POST">
 					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-username">User Name</label>
+						<label class="image-replace cd-username" for="signup-username" name ="name" >User Name</label>
 						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Write user name">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-usersurname">User Surname</label>
+						<label class="image-replace cd-username" for="signup-usersurname" name = "surname">User Surname</label>
 						<input class="full-width has-padding has-border" id="signup-usersurname" type="text" placeholder="Write user surname">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-sex">User Sex</label>
+						<label class="image-replace cd-username" for="signup-sex" name = "sex">User Sex</label>
 						<input class="full-width has-padding has-border" id="signup-sex" type="text" placeholder="Write user sex">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-yearofbirth">User Year of Birth</label>
+						<label class="image-replace cd-username" for="signup-yearofbirth" name = "yob">User Year of Birth</label>
 						<input class="full-width has-padding has-border" id="signup-yearofbirth" type="date" min="1910-01-01" placeholder="Write user year of birth">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-address">User Address</label>
+						<label class="image-replace cd-username" for="signup-address" name = "address">User Address</label>
 						<input class="full-width has-padding has-border" id="signup-address" type="text" placeholder="Write user address">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-phonenumber">User Phone Number</label>
+						<label class="image-replace cd-username" for="signup-phonenumber" name = "phonenumber">User Phone Number</label>
 						<input class="full-width has-padding has-border" id="signup-phonenumber" type="text" placeholder="Write user phone number">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-email" for="signup-email">E-mail</label>
+						<label class="image-replace cd-email" for="signup-email" name = "email">E-mail</label>
 						<input class="full-width has-padding has-border" id="signup-email" type="text" placeholder="E-mail">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-password" for="signup-password">Password</label>
+						<label class="image-replace cd-password" for="signup-password" name = "password">Password</label>
 						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-password" for="signup-password">Confirm Password</label>
+						<label class="image-replace cd-password" for="signup-password" name = "confirmPassword">Confirm Password</label>
 						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">There is error!</span>
