@@ -20,6 +20,9 @@ class CreateUsersTable extends Migration
             $table->date('yearOfBirth');
             $table->string('sex');
             $table->string('address');
+            $table->string('email');
+            $table->string('password');
+
             $table->bigInteger('phoneNumber');
 
             $table->timestamps();

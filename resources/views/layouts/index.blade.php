@@ -12,14 +12,17 @@
 		</nav>
 	</header>
 	
-	<!-- <div class="cd-intro">
-		<h1>Modal Forms Login / Sign up</h1>
+	<div class="cd-intro">
+		<h1></h1>
 		<div class="cd-nugget-info">
-			<a href="http://dbmast.ru/adaptivnye-modalnye-formy-vhoda-i-registracii">
-				&larr;  &amp; Download
-			</a>
+		@if(count($errors)>0)
+@foreach($errors->all() as $error)
+{{$error}}
+<br/>
+@endforeach
+@endif
 		</div>
-	</div> -->
+	</div>
 
 	<div class="cd-user-modal"> <!-- все формы на фоне затемнения-->
 		<div class="cd-user-modal-container"> <!-- основной контейнер -->
@@ -55,57 +58,59 @@
 			<div id="cd-signup"> <!-- форма регистрации -->
 				<form class="cd-form" action = "{{route('postRegistration')}}" method="POST">
 					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-username" name ="name" >User Name</label>
-						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Write user name">
+		
+
+						<label class="image-replace cd-username" for="signup-username"  >User Name</label>
+						<input class="full-width has-padding has-border" id="signup-username" name ="name" type="text" placeholder="Write user name">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-usersurname" name = "surname">User Surname</label>
-						<input class="full-width has-padding has-border" id="signup-usersurname" type="text" placeholder="Write user surname">
+						<label class="image-replace cd-username" for="signup-usersurname">User Surname</label>
+						<input class="full-width has-padding has-border" id="signup-usersurname"  name = "surname" type="text" placeholder="Write user surname">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-sex" name = "sex">User Sex</label>
-						<input class="full-width has-padding has-border" id="signup-sex" type="text" placeholder="Write user sex">
+						<label class="image-replace cd-username" for="signup-sex" >User Sex</label>
+						<input class="full-width has-padding has-border" id="signup-sex" name = "sex" type="text" placeholder="Write user sex">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-yearofbirth" name = "yob">User Year of Birth</label>
-						<input class="full-width has-padding has-border" id="signup-yearofbirth" type="date" min="1910-01-01" placeholder="Write user year of birth">
+						<label class="image-replace cd-username" for="signup-yearofbirth" >User Year of Birth</label>
+						<input class="full-width has-padding has-border" id="signup-yearofbirth" name = "yearOfBirth" type="date" min="1910-01-01" placeholder="Write user year of birth">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-address" name = "address">User Address</label>
-						<input class="full-width has-padding has-border" id="signup-address" type="text" placeholder="Write user address">
+						<label class="image-replace cd-username" for="signup-address" >User Address</label>
+						<input class="full-width has-padding has-border" id="signup-address" name = "address" type="text" placeholder="Write user address">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-phonenumber" name = "phonenumber">User Phone Number</label>
-						<input class="full-width has-padding has-border" id="signup-phonenumber" type="text" placeholder="Write user phone number">
+						<label class="image-replace cd-username" for="signup-phonenumber" >User Phone Number</label>
+						<input class="full-width has-padding has-border" id="signup-phonenumber" name = "phoneNumber" type="text" placeholder="Write user phone number">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-email" for="signup-email" name = "email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signup-email" type="text" placeholder="E-mail">
+						<label class="image-replace cd-email" for="signup-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signup-email"  name = "email" type="text" placeholder="E-mail">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-password" for="signup-password" name = "password">Password</label>
-						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+						<label class="image-replace cd-password" for="signup-password" >Password</label>
+						<input class="full-width has-padding has-border" id="signup-password" name = "password" type="text"  placeholder="Password">
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
-						<label class="image-replace cd-password" for="signup-password" name = "confirmPassword">Confirm Password</label>
-						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+						<label class="image-replace cd-password" for="signup-password" >Confirm Password</label>
+						<input class="full-width has-padding has-border" id="signup-password" name = "confirmPassword" type="text"  placeholder="Password">
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">There is error!</span>
 					</p>
@@ -116,7 +121,7 @@
 					</p>
 
 					<p class="fieldset">
-						<button class="full-width has-padding" type="submit" value="Create Account">Create Account</button>
+						<button type="submit" class="full-width has-padding" type="submit"  value="Create Account">Create Account</button>
 					</p>
 				{{csrf_field()}}
 				
