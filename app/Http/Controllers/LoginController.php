@@ -20,7 +20,7 @@ class LoginController extends Controller
         echo 'user notfound';
       }  
       if(md5($request->password)==($data1->password)){
-          echo 'Succesfully logged in';
+          return view ('Loginpage');
       } 
       else 
       {
