@@ -105,6 +105,8 @@
 					<p class="fieldset">
 						<input class="full-width has-padding" type="submit" value="Create Account">
 					</p>
+				{{csrf_field()}}
+				
 				</form>
 
 				<!-- <a href="#0" class="cd-close-form">Close</a> -->
