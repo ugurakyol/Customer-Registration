@@ -109,13 +109,8 @@
 					</p>
 
 					<p class="fieldset">
-<<<<<<< HEAD
 						<label class="image-replace cd-password" for="signup-password" >Confirm Password</label>
 						<input class="full-width has-padding has-border" id="signup-password" name = "confirmPassword" type="text"  placeholder="Password">
-=======
-						<label class="image-replace cd-password" for="signup-password" name = "confirmPassword">Confirm Password</label>
-						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Confirm Password">
->>>>>>> c536f88be062858a2417215a098c837ea869f371
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">There is error!</span>
 					</p>
