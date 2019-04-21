@@ -1,7 +1,7 @@
 
 <body>
-	<header role="banner">
-		<div id="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
+	<header role="banner"> 
+		<div id="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a> The Power of Engineering </div>
 
 		<nav class="main-nav">
 			<ul>
@@ -67,6 +67,12 @@
 					</p>
 
 					<p class="fieldset">
+						<label class="image-replace cd-username" for="signup-sex">User Sex</label>
+						<input class="full-width has-padding has-border" id="signup-sex" type="text" placeholder="Write user sex">
+						<span class="cd-error-message">There is error!</span>
+					</p>
+
+					<p class="fieldset">
 						<label class="image-replace cd-username" for="signup-yearofbirth">User Year of Birth</label>
 						<input class="full-width has-padding has-border" id="signup-yearofbirth" type="date" min="1910-01-01" placeholder="Write user year of birth">
 						<span class="cd-error-message">There is error!</span>
@@ -86,12 +92,19 @@
 
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signup-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+						<input class="full-width has-padding has-border" id="signup-email" type="text" placeholder="E-mail">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signup-password">Password</label>
+						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+						<a href="#0" class="hide-password">Hide</a>
+						<span class="cd-error-message">There is error!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signup-password">Confirm Password</label>
 						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">There is error!</span>
