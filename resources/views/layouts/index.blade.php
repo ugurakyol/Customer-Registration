@@ -5,7 +5,7 @@ img {
 </style>
 <body>
 	<header role="banner"> 
-		<div id="cd-logo"><img src="img/logo.jpeg" width="80px" height="40px"  alt="Logo"><a  href="#0">The Power of Engineering</a></div>
+		<div id="cd-logo"><img src="{{asset('img/logo.jpeg')}}" width="80px" height="40px"  alt="Logo"><a  href="#0">The Power of Engineering</a></div>
  
 		<nav class="main-nav">
 			<ul>

@@ -13,6 +13,13 @@ class LoginController extends Controller
       //dump($request);     
       //echo $request->email; 
       //dump(User::all());
+      $this->validate($request,
+      [
+          'email'=>'required|min:6',
+          'password'=>'required|max:100',
+          'password'=>'required|min:6',
+
+      ]);        
       $data = User::all()->where('email',$request->email)->first();
       $data1=(object)$data;
       if(!$data)
