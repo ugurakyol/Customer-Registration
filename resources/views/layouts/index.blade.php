@@ -32,24 +32,26 @@
 			</ul>
 
 			<div id="cd-login"> <!-- форма входа -->
-				<form class="cd-form">
+				<form class="cd-form" method = "post" action ="{{route('login')}}" >
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signin-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+						<input class="full-width has-padding has-border" id="signin-email"  name = "email" type="email" placeholder="E-mail">
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signin-password">Password</label>
-						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+						<input class="full-width has-padding has-border" id="signin-password" type="text" name = "password"  placeholder="Password">
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">There is error!</span>
 					</p>
 
 
 					<p class="fieldset">
-						<input class="full-width" type="submit" value="Log in">
+						<button type="submit" class="full-width" type="submit" value="Log in">Log in </button>
 					</p>
+					{{csrf_field()}}
+
 				</form>
 				
 				<!-- <a href="#0" class="cd-close-form">Close</a> -->
