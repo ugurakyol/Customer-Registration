@@ -1,11 +1,14 @@
-
+<style>
+img {
+  border-radius:20%;
+}
+</style>
 <body>
 	<header role="banner"> 
 		<div id="cd-logo"><img src="img/logo.jpeg" width="80px" height="40px"  alt="Logo"><a  href="#0">The Power of Engineering</a></div>
  
 		<nav class="main-nav">
 			<ul>
-				<!-- ссылки на вызов форм -->
 				<li><a class="cd-signin" href="#0">Login</a></li>
 				<li><a class="cd-signup" href="#0">Sign up</a></li>
 			</ul>
