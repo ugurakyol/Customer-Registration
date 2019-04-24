@@ -1,11 +1,14 @@
-
+<style>
+img {
+  border-radius:20%;
+}
+</style>
 <body>
 	<header role="banner"> 
-		<div id="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a> The Power of Engineering </div>
-
+		<div id="cd-logo"><img src="{{asset('img/logo.jpeg')}}" width="80px" height="40px"  alt="Logo"><a  href="#0">The Power of Engineering</a></div>
+ 
 		<nav class="main-nav">
 			<ul>
-				<!-- ссылки на вызов форм -->
 				<li><a class="cd-signin" href="#0">Login</a></li>
 				<li><a class="cd-signup" href="#0">Sign up</a></li>
 			</ul>
@@ -13,7 +16,9 @@
 	</header>
 	
 	<div class="cd-intro">
-		<h1></h1>
+	<div id="cd-logo">
+	<img src="img/Thepower.png" weight=300 height=300 alt="Logo">
+	</div>
 		<div class="cd-nugget-info">
 		@if(count($errors)>0)
 @foreach($errors->all() as $error)
