@@ -1,7 +1,7 @@
 
 <body>
 	<header role="banner"> 
-		<div id="cd-logo"><a href="#0"><img src="{{asset('img/logo.svg')}}" alt="Logo"></a> The Power of Engineering </div>
+	<div id="cd-logo"><img src="{{asset('img/logo.jpeg')}}" width="80px" height="40px"  alt="Logo"><a  href="#0">The Power of Engineering</a></div>
 
 	</header>
     <div class="cd-intro">
